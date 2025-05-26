@@ -17,13 +17,15 @@ const App = () => {
     },
   ]
   return (
-    <div id="main" className="ns-wrapper">
+    <div id="main">
+    <div className="ns-wrapper">
       {projects.map((project,index)=>(
         <div key={index}>
           <h1 data-ns-test="project-name">{project.name}</h1>
           <h6 data-ns-text="project-description">{project.description}</h6>
         </div>
       ))}
+        </div>
     </div>
   )
 }
